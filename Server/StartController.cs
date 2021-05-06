@@ -18,19 +18,7 @@ namespace ServerAspNetCoreLinux.Core
             _context = context;
             _httpContext = httpContext;
 
-            _context.SqlDataBaseConnection = new SqlDataBaseConnection();
-            // _context.DataBaseConnection.Connect();
-            // if (!context.DataBaseConnection.IsConnection)
-            // {
-            //     ServerLoggerModel.Log(TypeLog.Fatal, "The server did not start correctly due to problems with the connection to the database");
-            // }
-            // else
-            // {
-            //     CreateModels();
-            //     CreateControllers();
-            //     _controllerCollection.Activate();
-            //     ServerLoggerModel.Log(TypeLog.Info, "server started");
-            // }
+            
         }
 
         private void CreateModels()

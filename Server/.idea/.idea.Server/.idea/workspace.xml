@@ -8,69 +8,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a7270fd-c456-4c17-885e-2938c6caa97a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerCore/Utilities/IStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaseServer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Server.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Server.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Utilities/StepCollection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Commands/Base/ExecuteCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Commands/Base/ExecuteCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/DataBaseConnection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/ServerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/ServerConfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Utilities/IStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Utilities/IStep.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StartController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.AspNetCore.Hosting.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.AspNetCore.Hosting.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Extensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Features.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.AspNetCore.Http.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.AspNetCore.WebUtilities.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Binder.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.Configuration.FileExtensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.Configuration.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.FileProviders.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.FileProviders.Physical.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.FileSystemGlobbing.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.Hosting.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.Logging.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.ObjectPool.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.Options.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Framework.Configuration.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Microsoft.Net.Http.Headers.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.runtimeconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/ServerCore/ServerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/ServerCore/ServerConfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/ref/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/ref/Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/ref/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/ref/Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Server.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Server.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +48,11 @@
       <option value="$PROJECT_DIR$/ServerCore/Databases/NoSqlDataBaseConnection.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/BdConnection.cs" />
       <option value="$PROJECT_DIR$/ServerCore/ServerConfig.json" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Utilities/IStep.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Utilities/StepCollection.cs" />
+      <option value="$PROJECT_DIR$/StartController.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" />
+      <option value="$PROJECT_DIR$/ServerContext.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" />
     </changedPaths>
@@ -108,6 +67,8 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -155,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620326321748</updated>
       <workItem from="1620326334237" duration="225000" />
-      <workItem from="1620326596314" duration="1996000" />
+      <workItem from="1620326596314" duration="4162000" />
     </task>
     <servers />
   </component>

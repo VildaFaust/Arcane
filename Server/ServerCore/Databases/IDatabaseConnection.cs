@@ -4,5 +4,6 @@
     {
         void OpenConnect();
         void CloseConnect();
+        bool IsConnected { get; set; }
     }
 }

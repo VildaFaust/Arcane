@@ -1,5 +1,6 @@
 ﻿using ServerAspNetCoreLinux.ServerCore;
 using ServerAspNetCoreLinux.ServerCore.Commands;
+using ServerAspNetCoreLinux.ServerCore.Databases;
 using ServerAspNetCoreLinux.ServerCore.Utilities;
 
 namespace ServerAspNetCoreLinux
@@ -8,6 +9,6 @@ namespace ServerAspNetCoreLinux
     {
         public CommandModel CommandModel;
         public CommandsFactory CommandsFactory;
-        public SqlDataBaseConnection SqlDataBaseConnection;
+        public IDatabaseConnection DatabaseConnection;
     }
 }

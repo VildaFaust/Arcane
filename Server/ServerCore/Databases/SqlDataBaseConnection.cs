@@ -10,7 +10,7 @@ namespace ServerAspNetCoreLinux.ServerCore
     public class SqlDataBaseConnection : IDatabaseConnection
     {
         private readonly IDictionary<string, object> _settings;
-        public bool IsConnection;
+        public bool IsConnected { get; set; }
         public SqlConnection Connection;
 
         public SqlDataBaseConnection(IDictionary<string, object> settings)
@@ -31,9 +31,7 @@ namespace ServerAspNetCoreLinux.ServerCore
             try
             {
                 Connection.Open();
-                
-                ServerLoggerModel.Log(TypeLog.Info, "connection to db open");
-                IsConnection = true;
+                IsConnected = true;
             }
             catch (Exception e)
             {
