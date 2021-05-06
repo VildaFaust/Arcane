@@ -1,0 +1,16 @@
+﻿{
+  "SQL": {
+    "type_SQL": "SQL",
+    "DB" : {
+      "host" : "biromiro.database.windows.net",
+      "port" : "1433",
+      "database" : "biromiro",
+      "username" : "biromiro",
+      "password" : "testinG1"
+    }
+  },
+  "Replication": {
+    "enable": "",
+    "label": ["users", "sessions"]
+  }
+}

@@ -8,6 +8,6 @@ namespace ServerAspNetCoreLinux
     {
         public CommandModel CommandModel;
         public CommandsFactory CommandsFactory;
-        public DataBaseConnection DataBaseConnection;
+        public SqlDataBaseConnection SqlDataBaseConnection;
     }
 }

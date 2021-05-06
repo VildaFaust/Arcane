@@ -1,28 +1,31 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
 using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using DefaultNamespace;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using ServerAspNetCoreLinux.ServerCore;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace Server
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            var configServer = new ConfigurationBuilder().Build();
+            var configServer = new ConfigurationBuilder().AddCommandLine(args).Build();
             
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("Server started");
-            CreateHostBuilder(configServer).Build().Start();
+            CreateHostBuilder(configServer).Build().Run();
         }
-        
+
         public static IWebHostBuilder CreateHostBuilder(IConfigurationRoot args) => new WebHostBuilder()
             .UseConfiguration(args)
             .UseContentRoot(Directory.GetCurrentDirectory())
+            .UseKestrel()
+            .UseIISIntegration()
             .UseStartup<Startup>().UseContentRoot(Environment.CurrentDirectory);
     }
 }

@@ -47,8 +47,8 @@ namespace ServerAspNetCoreLinux.ServerCore.Commands.Base
             try
             {
                 var sendObject = JsonConvert.SerializeObject(UserParams);
-                // await Response.WriteAsync(sendObject);
-                await Response.SendFileAsync(sendObject);
+                await Response.WriteAsync(sendObject);
+                await Response.CompleteAsync();
             }
             catch (Exception e)
             {

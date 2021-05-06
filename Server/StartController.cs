@@ -18,7 +18,7 @@ namespace ServerAspNetCoreLinux.Core
             _context = context;
             _httpContext = httpContext;
 
-            _context.DataBaseConnection = new DataBaseConnection();
+            _context.SqlDataBaseConnection = new SqlDataBaseConnection();
             // _context.DataBaseConnection.Connect();
             // if (!context.DataBaseConnection.IsConnection)
             // {

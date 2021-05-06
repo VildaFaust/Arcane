@@ -1,0 +1,7 @@
+﻿namespace ServerAspNetCoreLinux.ServerCore.Utilities
+{
+    public interface IStep
+    {
+        void Execute(ServerContext context, ControllerCollection controllerCollection);
+    }
+}
