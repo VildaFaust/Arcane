@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using MongoDB.Driver;
 using ServerAspNetCoreLinux.ServerCore.Databases;
 using ServerAspNetCoreLinux.ServerCore.ServerLogger;
 using ServerAspNetCoreLinux.ServerCore.Utilities;
@@ -29,19 +30,14 @@ namespace ServerAspNetCoreLinux.ServerCore
             //
             // Connection = new SqlConnection(builder.ConnectionString);
             
-            // var myConnection = new SqlConnection($"user id={_settings.GetString("username")};" + 
-            //                                      $"password={_settings.GetString("password")};" +
-            //                                      $"server={_settings.GetString("host")};" + 
-            //                                      "Trusted_Connection=yes;" + 
-            //                                      $"database={_settings.GetString("database")}; " + 
-            //                                      "connection timeout=5" + "Integrated Security=true;");
             
-            var myConnectionString = $"Server={_settings.GetString("host")};Port=3306;Database={_settings.GetString("database")};Uid={_settings.GetString("username")};Pwd={_settings.GetString("password")}";
-            Connection = new SqlConnection(myConnectionString);
+            
             
             try
             {
-                Connection.Open();
+                var client = new MongoClient("mongodb://root:root@cluster0-shard-00-00.umhob.mongodb.net:27017,cluster0-shard-00-01.umhob.mongodb.net:27017,cluster0-shard-00-02.umhob.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-10b0h5-shard-0&authSource=admin&retryWrites=true&w=majority");
+                var database = client.GetDatabase("test");
+                // Connection.Open();
                 IsConnected = true;
             }
             catch (Exception e)
