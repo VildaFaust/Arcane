@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Server.ServerCore.Databases;
 using ServerAspNetCoreLinux.Commands;
 using ServerAspNetCoreLinux.ServerCore;
 using ServerAspNetCoreLinux.ServerCore.Commands;
@@ -7,29 +8,28 @@ using ServerAspNetCoreLinux.ServerCore.Utilities;
 
 namespace ServerAspNetCoreLinux.Core
 {
-    public class StartController
+    public class StartController : IController
     {
         private readonly ServerContext _context;
         private ControllerCollection _controllerCollection = new ControllerCollection();
+        private StepCollection _stepCollection = new StepCollection();
         private HttpContext _httpContext;
 
         public StartController(ServerContext context, HttpContext httpContext)
         {
             _context = context;
             _httpContext = httpContext;
-
-            
+            _stepCollection.Add(new DatabaseConnectionStep());
         }
 
-        private void CreateModels()
+        public void Activate()
         {
-            _context.CommandModel = new CommandModel();
-            _context.CommandsFactory = new CommandsFactory(_context);
+            _stepCollection.Execute(_context, _controllerCollection);
         }
 
-        private void CreateControllers()
+        public void Deactivate()
         {
-            _controllerCollection.Add(new CommandController(_context, _context.CommandModel));
+            _stepCollection.Clear(_context);
         }
     }
 }

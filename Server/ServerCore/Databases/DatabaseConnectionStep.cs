@@ -12,7 +12,7 @@ namespace Server.ServerCore.Databases
         {
             var data = JsonLoader.Load(@"ServerCore/ServerConfig.json");
             var dbConfig = data.GetNode("database");
-
+            
             IDatabaseConnection databaseConnection = null;
             switch (dbConfig.GetString("type"))
             {

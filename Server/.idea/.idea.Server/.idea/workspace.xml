@@ -8,22 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a7270fd-c456-4c17-885e-2938c6caa97a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ServerCore/Utilities/StepCollection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Utilities/IStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Utilities/IStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/ServerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/ServerConfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Startup.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/StartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StartController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/ServerCore/ServerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/ServerCore/ServerConfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/ref/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/ref/Server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/ref/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/ref/Server.dll" afterDir="false" />
@@ -40,21 +35,21 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/ServerCore/Commands/Base/ExecuteCommand.cs" />
       <option value="$PROJECT_DIR$/obj/Debug/net5.0/Server.AssemblyInfo.cs" />
-      <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/Properties/launchSettings.json" />
-      <option value="$PROJECT_DIR$/Startup.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/IDatabase.cs" />
       <option value="$PROJECT_DIR$/ServerCore/DataBaseConnection.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/NoSqlDataBaseConnection.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/BdConnection.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/ServerConfig.json" />
       <option value="$PROJECT_DIR$/ServerCore/Utilities/IStep.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Utilities/StepCollection.cs" />
-      <option value="$PROJECT_DIR$/StartController.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" />
       <option value="$PROJECT_DIR$/ServerContext.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" />
+      <option value="$PROJECT_DIR$/Program.cs" />
+      <option value="$PROJECT_DIR$/StartController.cs" />
+      <option value="$PROJECT_DIR$/Startup.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/ServerConfig.json" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sArd0v7oztZ3cy6WNanqmhNW6U" />
@@ -72,6 +67,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -116,7 +112,8 @@
       <option name="presentableId" value="Default" />
       <updated>1620326321748</updated>
       <workItem from="1620326334237" duration="225000" />
-      <workItem from="1620326596314" duration="4162000" />
+      <workItem from="1620326596314" duration="6252000" />
+      <workItem from="1620392263074" duration="609000" />
     </task>
     <servers />
   </component>
@@ -135,6 +132,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

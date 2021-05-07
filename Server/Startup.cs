@@ -29,6 +29,7 @@ namespace Server
         {
             Context = new ServerContext();
             StartController = new StartController(Context, HttpContext);
+            StartController.Activate();
 
             app.UseDefaultFiles();
 

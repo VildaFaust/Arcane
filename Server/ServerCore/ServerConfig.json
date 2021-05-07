@@ -2,11 +2,11 @@
   "database": {
     "type": "SQL",
     "settings" : {
-      "host" : "",
-      "port" : "",
-      "database" : "",
-      "username" : "",
-      "password" : ""
+      "host" : "sql11.freemysqlhosting.net",
+      "port" : "3306",
+      "database" : "sql11410913",
+      "username" : "sql11410913",
+      "password" : "8FnA9aea3N"
     }
   },
   "Replication": {
