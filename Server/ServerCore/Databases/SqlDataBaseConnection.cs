@@ -20,14 +20,25 @@ namespace ServerAspNetCoreLinux.ServerCore
 
         public void OpenConnect()
         {
-            var builder = new SqlConnectionStringBuilder();
-        
-            builder.DataSource = _settings.GetString("host"); 
-            builder.UserID = _settings.GetString("username");            
-            builder.Password = _settings.GetString("password");     
-            builder.InitialCatalog = _settings.GetString("database");
+            // var builder = new SqlConnectionStringBuilder();
+            //
+            // builder.DataSource = _settings.GetString("host"); 
+            // builder.UserID = _settings.GetString("username");            
+            // builder.Password = _settings.GetString("password");     
+            // builder.InitialCatalog = _settings.GetString("database");
+            //
+            // Connection = new SqlConnection(builder.ConnectionString);
             
-            Connection = new SqlConnection(builder.ConnectionString);
+            // var myConnection = new SqlConnection($"user id={_settings.GetString("username")};" + 
+            //                                      $"password={_settings.GetString("password")};" +
+            //                                      $"server={_settings.GetString("host")};" + 
+            //                                      "Trusted_Connection=yes;" + 
+            //                                      $"database={_settings.GetString("database")}; " + 
+            //                                      "connection timeout=5" + "Integrated Security=true;");
+            
+            var myConnectionString = $"Server={_settings.GetString("host")};Port=3306;Database={_settings.GetString("database")};Uid={_settings.GetString("username")};Pwd={_settings.GetString("password")}";
+            Connection = new SqlConnection(myConnectionString);
+            
             try
             {
                 Connection.Open();

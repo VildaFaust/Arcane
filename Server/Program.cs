@@ -26,6 +26,7 @@ namespace Server
             .UseContentRoot(Directory.GetCurrentDirectory())
             .UseKestrel()
             .UseIISIntegration()
-            .UseStartup<Startup>().UseContentRoot(Environment.CurrentDirectory);
+            .UseStartup<Startup>()
+            .UseContentRoot(Environment.CurrentDirectory);
     }
 }

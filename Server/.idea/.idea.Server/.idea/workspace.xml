@@ -9,19 +9,16 @@
   <component name="ChangeListManager">
     <list default="true" id="5a7270fd-c456-4c17-885e-2938c6caa97a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerCore/ServerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/ServerConfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Startup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StartController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/ServerCore/ServerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/ServerCore/ServerConfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/ref/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/ref/Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/ref/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/ref/Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +27,21 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ServerCore/Utilities/StepCollection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/4F61C785-9415-475C-B813-E2AF0B5F9E50/08/1df41f17/02000006pdb.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerCore/ServerConfig.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StartController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C7DCC6EB-1D39-400C-80B9-6C2D5D57BA97/ce/4b204f95/SqlConnectionStringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -45,11 +57,12 @@
       <option value="$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" />
       <option value="$PROJECT_DIR$/ServerContext.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" />
-      <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/StartController.cs" />
       <option value="$PROJECT_DIR$/Startup.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" />
       <option value="$PROJECT_DIR$/ServerCore/ServerConfig.json" />
+      <option value="$PROJECT_DIR$/Program.cs" />
+      <option value="$PROJECT_DIR$/Server.csproj" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sArd0v7oztZ3cy6WNanqmhNW6U" />
@@ -102,6 +115,10 @@
         <option name="Build" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.Server" />
+      <item itemvalue=".NET Launch Settings Profile.Server: IIS Express" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -114,6 +131,10 @@
       <workItem from="1620326334237" duration="225000" />
       <workItem from="1620326596314" duration="6252000" />
       <workItem from="1620392263074" duration="609000" />
+      <workItem from="1620394580653" duration="142000" />
+      <workItem from="1620394895788" duration="2514000" />
+      <workItem from="1620397702012" duration="180000" />
+      <workItem from="1620398329680" duration="87000" />
     </task>
     <servers />
   </component>

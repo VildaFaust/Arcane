@@ -2,11 +2,11 @@
   "database": {
     "type": "SQL",
     "settings" : {
-      "host" : "sql11.freemysqlhosting.net",
+      "host" : "remotemysql.com",
       "port" : "3306",
-      "database" : "sql11410913",
-      "username" : "sql11410913",
-      "password" : "8FnA9aea3N"
+      "database" : "QYiBiMmFG5",
+      "username" : "QYiBiMmFG5",
+      "password" : "5Zktswrnvw"
     }
   },
   "Replication": {
