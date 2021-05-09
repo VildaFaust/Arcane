@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ServerAspNetCoreLinux.ServerCore.Utilities
+namespace Server.ServerCore.Utilities
 {
     public static class NodeExtension
     {

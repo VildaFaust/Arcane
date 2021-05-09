@@ -1,6 +1,6 @@
 ﻿﻿using System.Text;
 
- namespace ServerAspNetCoreLinux.Lib.fastJSON
+ namespace Server.Libs.fastJSON
 {
     internal static class Formatter
     {

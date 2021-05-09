@@ -1,6 +1,4 @@
-﻿using ServerAspNetCoreLinux.Commands.Base;
-
-namespace ServerAspNetCoreLinux.ServerCore.Commands.Base
+﻿namespace Server.ServerCore.Commands.Base
 {
     public interface IExecuteCommand : ICommand
     {

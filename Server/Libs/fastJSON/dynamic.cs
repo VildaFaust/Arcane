@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
 
-namespace ServerAspNetCoreLinux.Lib.fastJSON
+namespace Server.Libs.fastJSON
 {
     internal class DynamicJson : DynamicObject, IEnumerable
     {

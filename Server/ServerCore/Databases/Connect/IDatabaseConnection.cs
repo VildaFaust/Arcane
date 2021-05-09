@@ -1,4 +1,4 @@
-﻿namespace ServerAspNetCoreLinux.ServerCore.Databases
+﻿namespace Server.ServerCore.Databases.Connect
 {
     public interface IDatabaseConnection
     {

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using ServerAspNetCoreLinux.Lib.fastJSON;
+using Server.Libs.fastJSON;
 
-namespace ServerAspNetCoreLinux.ServerCore.Utilities
+namespace Server.ServerCore.Utilities
 {
     public static class JsonLoader
     {

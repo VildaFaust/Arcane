@@ -5,10 +5,11 @@ using System.Collections.Specialized;
 using System.Data;
 using System.Globalization;
 using System.IO;
+
 #if !SILVERLIGHT
 #endif
 
-namespace ServerAspNetCoreLinux.Lib.fastJSON
+namespace Server.Libs.fastJSON
 {
     //public delegate string Serialize(object data);
     //public delegate object Deserialize(string data);

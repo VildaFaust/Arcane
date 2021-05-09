@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 
-namespace ServerAspNetCoreLinux.Lib.fastJSON
+namespace Server.Libs.fastJSON
 {
     //public class FJObject : Dictionary<string,object>
     //{

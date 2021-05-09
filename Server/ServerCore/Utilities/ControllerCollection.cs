@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ServerAspNetCoreLinux.ServerCore.Utilities
+namespace Server.ServerCore.Utilities
 {
     public class ControllerCollection
     {

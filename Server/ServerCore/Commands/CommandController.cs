@@ -1,7 +1,7 @@
-﻿using ServerAspNetCoreLinux.ServerCore.Commands.Base;
-using ServerAspNetCoreLinux.ServerCore.Utilities;
+﻿using Server.ServerCore.Commands.Base;
+using Server.ServerCore.Utilities;
 
-namespace ServerAspNetCoreLinux.ServerCore.Commands
+namespace Server.ServerCore.Commands
 {
     public class CommandController : IController
     {

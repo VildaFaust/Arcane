@@ -1,7 +1,7 @@
 ﻿using System;
-using ServerAspNetCoreLinux.ServerCore.Commands.Base;
+using Server.ServerCore.Commands.Base;
 
-namespace ServerAspNetCoreLinux.ServerCore.Commands
+namespace Server.ServerCore.Commands
 {
     public class CommandModel
     {

@@ -1,4 +1,4 @@
-﻿namespace ServerAspNetCoreLinux.ServerCore.ServerLogger
+﻿namespace Server.ServerCore.ServerLogger
 {
     public static class ServerLoggerConst
     {

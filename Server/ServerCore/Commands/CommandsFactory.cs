@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
-using ServerAspNetCoreLinux.ServerCore.Commands.Base;
+using Server.ServerCore.Commands.Base;
 
-namespace ServerAspNetCoreLinux.ServerCore.Utilities
+namespace Server.ServerCore.Commands
 {
     public class CommandsFactory
     {

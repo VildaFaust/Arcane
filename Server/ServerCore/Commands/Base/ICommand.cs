@@ -1,4 +1,4 @@
-﻿namespace ServerAspNetCoreLinux.Commands.Base
+﻿namespace Server.ServerCore.Commands.Base
 {
     public interface ICommand
     {

@@ -1,10 +1,7 @@
-﻿using ServerAspNetCoreLinux;
-using ServerAspNetCoreLinux.ServerCore;
-using ServerAspNetCoreLinux.ServerCore.Databases;
-using ServerAspNetCoreLinux.ServerCore.ServerLogger;
-using ServerAspNetCoreLinux.ServerCore.Utilities;
+﻿using Server.ServerCore.ServerLogger;
+using Server.ServerCore.Utilities;
 
-namespace Server.ServerCore.Databases
+namespace Server.ServerCore.Databases.Connect
 {
     public class DatabaseConnectionStep : IStep
     {

@@ -6,13 +6,14 @@ using System.Data;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Text;
+
 #if NET4
 using System.Linq;
 #endif
 #if !SILVERLIGHT
 #endif
 
-namespace ServerAspNetCoreLinux.Lib.fastJSON
+namespace Server.Libs.fastJSON
 {
     public struct Getters
     {

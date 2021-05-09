@@ -8,15 +8,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a7270fd-c456-4c17-885e-2938c6caa97a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Databases/Config/Table.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Databases/Config/TableFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Properties/BoolProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Properties/ByteProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Properties/CharProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Properties/ConfigModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Properties/FloatProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Properties/IProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Properties/IntProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Properties/PropertiesExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Properties/StringProperty.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseConnectionStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/Connect/IDatabaseConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/Connect/SqlDataBaseConnection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerCore/ServerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/ServerConfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/ServerCore/ServerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/ServerCore/ServerConfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/ServerLogger/ServerLoggerConst.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Properties/ServerLogger/ServerLoggerConst.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/ServerLogger/ServerLoggerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Properties/ServerLogger/ServerLoggerModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/ServerLogger/TypeLog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Properties/ServerLogger/TypeLog.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,15 +39,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8EF69D3-A481-43FE-8568-E981A8FFA98B/3b/1ddd38e8/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/4F61C785-9415-475C-B813-E2AF0B5F9E50/08/1df41f17/02000006pdb.il" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/Connect/SqlDataBaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ServerCore/ServerConfig.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StartController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ServerCore/Utilities/StepCollection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseConnectionStep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/Connect/IDatabaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ServerContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C7DCC6EB-1D39-400C-80B9-6C2D5D57BA97/ce/4b204f95/SqlConnectionStringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/appsettings.json" root0="FORCE_HIGHLIGHTING" />
@@ -60,8 +70,25 @@
       <option value="$PROJECT_DIR$/Startup.cs" />
       <option value="$PROJECT_DIR$/Program.cs" />
       <option value="$PROJECT_DIR$/Server.csproj" />
-      <option value="$PROJECT_DIR$/ServerCore/ServerConfig.json" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/TableModel.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/ConfigModel.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/Properties.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/ServerConfig.json" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/Property.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/IntProperty.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/StringProperty.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Properties/StringProperty.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/TableUnitModel.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Properties/IntProperty.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/Table.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Properties/IProperty.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/TableFactory.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/FloatProperty.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/BoolProperty.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/ByteProperty.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Properties/PropertiesExtension.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/CharProperty.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sArd0v7oztZ3cy6WNanqmhNW6U" />
@@ -138,6 +165,7 @@
       <workItem from="1620398329680" duration="87000" />
       <workItem from="1620399093667" duration="2051000" />
       <workItem from="1620408120922" duration="2328000" />
+      <workItem from="1620559450671" duration="9659000" />
     </task>
     <servers />
   </component>

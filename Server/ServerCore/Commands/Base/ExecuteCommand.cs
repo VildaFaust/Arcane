@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
-using ServerAspNetCoreLinux.ServerCore.ServerLogger;
+using Server.ServerCore.ServerLogger;
 
-namespace ServerAspNetCoreLinux.ServerCore.Commands.Base
+namespace Server.ServerCore.Commands.Base
 {
     public abstract class ExecuteCommand : IExecuteCommand
     {

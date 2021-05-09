@@ -1,6 +1,6 @@
 ﻿﻿using System.Collections.Generic;
 
- namespace ServerAspNetCoreLinux.Lib.fastJSON
+ namespace Server.Libs.fastJSON
 {
     public sealed class DatasetSchema
     {

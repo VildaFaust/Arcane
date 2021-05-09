@@ -1,9 +1,7 @@
-﻿using ServerAspNetCoreLinux.ServerCore;
-using ServerAspNetCoreLinux.ServerCore.Commands;
-using ServerAspNetCoreLinux.ServerCore.Databases;
-using ServerAspNetCoreLinux.ServerCore.Utilities;
+﻿using Server.ServerCore.Commands;
+using Server.ServerCore.Databases.Connect;
 
-namespace ServerAspNetCoreLinux
+namespace Server
 {
     public class ServerContext
     {

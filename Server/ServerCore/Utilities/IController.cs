@@ -1,4 +1,4 @@
-﻿namespace ServerAspNetCoreLinux.ServerCore.Utilities
+﻿namespace Server.ServerCore.Utilities
 {
     public interface IController
     {

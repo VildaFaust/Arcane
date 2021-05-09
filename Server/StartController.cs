@@ -1,12 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Server.ServerCore.Databases;
-using ServerAspNetCoreLinux.Commands;
-using ServerAspNetCoreLinux.ServerCore;
-using ServerAspNetCoreLinux.ServerCore.Commands;
-using ServerAspNetCoreLinux.ServerCore.ServerLogger;
-using ServerAspNetCoreLinux.ServerCore.Utilities;
+using Server.ServerCore.Databases.Connect;
+using Server.ServerCore.Utilities;
 
-namespace ServerAspNetCoreLinux.Core
+namespace Server
 {
     public class StartController : IController
     {

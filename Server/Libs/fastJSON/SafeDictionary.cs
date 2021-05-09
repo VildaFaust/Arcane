@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
-namespace ServerAspNetCoreLinux.Lib.fastJSON
+namespace Server.Libs.fastJSON
 {
     public class ReferenceEqualityComparer : IEqualityComparer, IEqualityComparer<object>
     {

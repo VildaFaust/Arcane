@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using static ServerAspNetCoreLinux.ServerCore.ServerLogger.ServerLoggerConst;
+using static Server.ServerCore.ServerLogger.ServerLoggerConst;
 
-namespace ServerAspNetCoreLinux.ServerCore.ServerLogger
+namespace Server.ServerCore.ServerLogger
 {
     public static class ServerLoggerModel
     {
