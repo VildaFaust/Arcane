@@ -8,13 +8,12 @@ using ServerAspNetCoreLinux.ServerCore.Utilities;
 
 namespace ServerAspNetCoreLinux.ServerCore
 {
-    public class SqlDataBaseConnection : IDatabaseConnection
+    public class MongoDataBaseConnection : IDatabaseConnection
     {
         private readonly IDictionary<string, object> _settings;
         public bool IsConnected { get; set; }
-        public SqlConnection Connection;
-
-        public SqlDataBaseConnection(IDictionary<string, object> settings)
+        public IMongoClient client;
+        public MongoDataBaseConnection(IDictionary<string, object> settings)
         {
             _settings = settings;
         }
@@ -25,7 +24,7 @@ namespace ServerAspNetCoreLinux.ServerCore
 
             try
             {
-                var client = new MongoClient(connectionString);
+                client = new MongoClient(connectionString);
                 var database = client.GetDatabase("test");
                 
                 IsConnected = true;
@@ -38,7 +37,6 @@ namespace ServerAspNetCoreLinux.ServerCore
         
         public void CloseConnect()
         {
-            Connection.Close();
         }
     }
 }
