@@ -17,7 +17,7 @@ namespace Server.ServerCore.Databases
             switch (dbConfig.GetString("type"))
             {
                 case "SQL":
-                    databaseConnection = new SqlDataBaseConnection(dbConfig.GetNode("settings"));
+                    databaseConnection = new MongoDataBaseConnection(dbConfig.GetNode("settings"));
                     break;
             }
 

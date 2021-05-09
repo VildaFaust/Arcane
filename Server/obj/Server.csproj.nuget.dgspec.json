@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mephy\\RiderProjects\\server\\Server\\Server.csproj": {}
+    "C:\\Server\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mephy\\RiderProjects\\server\\Server\\Server.csproj": {
+    "C:\\Server\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mephy\\RiderProjects\\server\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\Server\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\mephy\\RiderProjects\\server\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\mephy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mephy\\RiderProjects\\server\\Server\\obj\\",
+        "projectPath": "C:\\Server\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\Тимофей\\.nuget\\packages\\",
+        "outputPath": "C:\\Server\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mephy\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Тимофей\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +46,7 @@
             },
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[2.13.0-beta1, )"
+              "version": "[2.12.3, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
