@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MongoDB - myFirstDatabase@cluster0-shard-00-00.umhob.mongodb.net">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.21">
+    <root id="1">
+      <ServerVersion>4.4.5</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="local"/>
+    <table id="4" parent="3" name="clustermanager"/>
+    <table id="5" parent="3" name="oplog.rs"/>
+    <table id="6" parent="3" name="replset.election"/>
+    <table id="7" parent="3" name="replset.initialSyncId"/>
+    <table id="8" parent="3" name="replset.minvalid"/>
+    <table id="9" parent="3" name="replset.oplogTruncateAfterPoint"/>
+    <table id="10" parent="3" name="startup_log"/>
+  </database-model>
+</dataSource>

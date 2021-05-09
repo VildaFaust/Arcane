@@ -21,23 +21,13 @@ namespace ServerAspNetCoreLinux.ServerCore
 
         public void OpenConnect()
         {
-            // var builder = new SqlConnectionStringBuilder();
-            //
-            // builder.DataSource = _settings.GetString("host"); 
-            // builder.UserID = _settings.GetString("username");            
-            // builder.Password = _settings.GetString("password");     
-            // builder.InitialCatalog = _settings.GetString("database");
-            //
-            // Connection = new SqlConnection(builder.ConnectionString);
-            
-            
-            
-            
+            var connectionString = _settings.GetString("mongodb");
+
             try
             {
-                var client = new MongoClient("mongodb://root:root@cluster0-shard-00-00.umhob.mongodb.net:27017,cluster0-shard-00-01.umhob.mongodb.net:27017,cluster0-shard-00-02.umhob.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-10b0h5-shard-0&authSource=admin&retryWrites=true&w=majority");
+                var client = new MongoClient(connectionString);
                 var database = client.GetDatabase("test");
-                // Connection.Open();
+                
                 IsConnected = true;
             }
             catch (Exception e)
