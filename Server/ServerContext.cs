@@ -7,6 +7,8 @@ namespace Server
     {
         public CommandModel CommandModel;
         public CommandsFactory CommandsFactory;
+        
         public IDatabaseConnection DatabaseConnection;
+        public DatabaseCollectionData Data;
     }
 }
