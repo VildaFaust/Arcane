@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using MongoDB.Bson;
 using MongoDB.Driver;
-using Server.ServerCore;
-using Server.ServerCore.Databases.Connect;
 using Server.ServerCore.ServerLogger;
 using Server.ServerCore.Utilities;
 
-namespace ServerAspNetCoreLinux.ServerCore
+namespace Server.ServerCore.Databases.Connect
 {
     public class MongoDataBaseConnection : IDatabaseConnection
     {

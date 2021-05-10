@@ -1,9 +1,8 @@
-﻿using System.Reflection.Metadata;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using ObjectId = MongoDB.Bson.ObjectId;
 
-namespace Server.ServerCore
+namespace Server.ServerCore.User
 {
     public class User
     {

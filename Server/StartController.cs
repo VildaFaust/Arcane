@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Server.ServerCore;
 using Server.ServerCore.Databases.Connect;
+using Server.ServerCore.Services;
 using Server.ServerCore.Utilities;
 
 namespace Server
@@ -10,14 +11,13 @@ namespace Server
         private readonly ServerContext _context;
         private ControllerCollection _controllerCollection = new ControllerCollection();
         private StepCollection _stepCollection = new StepCollection();
-        private HttpContext _httpContext;
 
-        public StartController(ServerContext context, HttpContext httpContext)
+        public StartController(ServerContext context)
         {
             _context = context;
-            _httpContext = httpContext;
             _stepCollection.Add(new DatabaseConnectionStep());
             _stepCollection.Add(new DatabaseCollectionDataStep());
+            _stepCollection.Add(new ServicesCreateStep());
         }
 
         public void Activate()

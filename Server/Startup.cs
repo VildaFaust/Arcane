@@ -1,20 +1,16 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using Server.ServerCore.Handlers.Base;
 
 namespace Server
 {
     public class Startup
     {
-        public HttpContext HttpContext;
-        public ServerContext Context;
-        public StartController StartController;
+        private ServerContext _context;
+        private StartController _startController;
+        private readonly HandlersFactory _handlersFactory = new HandlersFactory();
         
         public void ConfigureServices(IServiceCollection services)
         {
@@ -25,9 +21,9 @@ namespace Server
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            Context = new ServerContext();
-            StartController = new StartController(Context, HttpContext);
-            StartController.Activate();
+            _context = new ServerContext();
+            _startController = new StartController(_context);
+            _startController.Activate();
 
             app.UseDefaultFiles();
 
@@ -48,8 +44,8 @@ namespace Server
                     }
                     else
                     {
-                        Context.CommandModel.AddCommand(
-                            Context.CommandsFactory.CommandFactory[context.Request.Form["Command"]](context.Request.Form,
+                        _context.HandlersModel.AddCommand(
+                            _handlersFactory.HandlerFactory[context.Request.Form["Command"]](context.Request.Form,
                                 context.Response, context.Request));
                     }
                 }

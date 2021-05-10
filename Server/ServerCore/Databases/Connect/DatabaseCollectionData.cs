@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Server.ServerCore.User;
 
 namespace Server.ServerCore.Databases.Connect
 {

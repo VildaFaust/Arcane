@@ -2,13 +2,13 @@
 using MongoDB.Bson;
 using MongoDB.Driver;
 
-namespace Server.ServerCore
+namespace Server.ServerCore.User
 {
     public class UserCollection
     {
         private IMongoCollection<User> _collection;
         public Dictionary<ObjectId, User> Users = new Dictionary<ObjectId, User>();
-        
+
         public UserCollection(ServerContext context)
         {
             var database = context.DatabaseConnection.Database;
@@ -35,5 +35,6 @@ namespace Server.ServerCore
             user.Id = ObjectId.GenerateNewId();
             _collection.InsertOne(user);
         }
+
     }
 }

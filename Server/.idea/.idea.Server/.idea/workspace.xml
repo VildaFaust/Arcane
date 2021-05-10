@@ -8,43 +8,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a7270fd-c456-4c17-885e-2938c6caa97a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ServerCore/ComplexTypeSerializer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseCollectionData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseCollectionDataStep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerCore/User/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerCore/User/UserCollection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Handlers/Authorization/AuthorizationHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Handlers/Authorization/AuthorizationHandlerData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Handlers/Base/HandlerData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Handlers/Base/HandlersFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Handlers/Base/HandlersModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Handlers/Registration/RegistrationHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Handlers/Registration/RegistrationHandlerData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Services/BaseServices/BaseServices.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Services/BaseServices/BaseServicesFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Services/BaseServices/Services/AuthorizationService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Services/BaseServices/Services/RegistrationService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Services/IService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Services/IServiceFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Services/IServices.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Services/ServiceConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Services/Services.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCore/Services/ServicesCreateStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Server.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/Config/Table.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/Config/TableFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Commands/Base/ExecuteCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Handlers/Base/ExecuteHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Commands/Base/ICommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Handlers/Base/IHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Commands/Base/IExecuteCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Handlers/Base/IExecuteHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Commands/CommandController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Handlers/Base/HandlerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Commands/CommandModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Commands/CommandsFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/ComplexTypeSerializer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseCollectionData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseCollectionData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseConnectionStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseConnectionStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/Connect/IDatabaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/Connect/IDatabaseConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Properties/BoolProperty.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Properties/ByteProperty.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Properties/CharProperty.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Properties/ConfigModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Properties/FloatProperty.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Properties/IProperty.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Properties/IntProperty.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Properties/PropertiesExtension.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/Properties/StringProperty.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCore/ServerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/ServerConfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/Databases/Connect/MongoDataBaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/Databases/Connect/MongoDataBaseConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/User/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/User/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCore/User/UserCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCore/User/UserCollection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StartController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/ServerCore/ServerConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/ServerCore/ServerConfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/ref/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/ref/Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Server.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Server.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/ref/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/ref/Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Server.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Server.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Server.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Server.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,58 +68,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8EF69D3-A481-43FE-8568-E981A8FFA98B/80/cce5fce3/AsyncTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8EF69D3-A481-43FE-8568-E981A8FFA98B/3b/1ddd38e8/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7735E3A1-903B-4DEA-BB1A-24DF3D753CFF/64/51929315/BsonIdAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/4F61C785-9415-475C-B813-E2AF0B5F9E50/08/1df41f17/02000006pdb.il" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0FCA2BA8-835E-4D0D-A361-8C21158A5F10/71/f65062ee/IMongoClient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ServerCore/ServerConfig.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/StartController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ServerCore/Utilities/StepCollection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseConnectionStep.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0FCA2BA8-835E-4D0D-A361-8C21158A5F10/9e/225aab29/IMongoCollection`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/Connect/IDatabaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ServerContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C7DCC6EB-1D39-400C-80B9-6C2D5D57BA97/ce/4b204f95/SqlConnectionStringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseConnectionStep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerCore/Utilities/StepCollection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StartController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerCore/ServerConfig.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerCore/Databases/Connect/IDatabaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/156C0238-EF8C-47E3-80EA-18498A6CFBFF/6/ServiceCollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/obj/Debug/net5.0/Server.AssemblyInfo.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/IDatabase.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/DataBaseConnection.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/NoSqlDataBaseConnection.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/BdConnection.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Utilities/IStep.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Utilities/StepCollection.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/IDatabaseConnection.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/DatabaseConnectionStep.cs" />
-      <option value="$PROJECT_DIR$/Startup.cs" />
-      <option value="$PROJECT_DIR$/Program.cs" />
-      <option value="$PROJECT_DIR$/Server.csproj" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/SqlDataBaseConnection.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/TableModel.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/ConfigModel.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/Properties.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/Property.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/IntProperty.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/StringProperty.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/TableUnitModel.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/Table.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/TableFactory.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/FloatProperty.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/BoolProperty.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/ByteProperty.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Databases/Config/CharProperty.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Properties/PropertiesExtension.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Properties/IProperty.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Properties/StringProperty.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Properties/IntProperty.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Properties/FloatProperty.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/Properties/CharProperty.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Properties/ByteProperty.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Properties/BoolProperty.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Properties/ConfigModel.cs" />
@@ -121,12 +95,44 @@
       <option value="$PROJECT_DIR$/appsettings.Development.json" />
       <option value="$PROJECT_DIR$/ServerCore/User.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/Connect/MongoDataBaseConnection.cs" />
-      <option value="$PROJECT_DIR$/ServerCore/User/UserCollection.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseCollectionData.cs" />
-      <option value="$PROJECT_DIR$/ServerContext.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseConnectionStep.cs" />
       <option value="$PROJECT_DIR$/ServerCore/Databases/Connect/DatabaseCollectionDataStep.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Commands/CommandsFactory.cs" />
+      <option value="$PROJECT_DIR$/RegistrationCommand.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/BaseServices.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/User/UserCollection.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/ServiceCreateStep.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/ServiceFactory.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/IServiceFactory.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/BaseServicesFactory.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/ServiceConfiguration.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/IService.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/Services.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/IServices.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/ServicesCreateStep.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/AuthorizationService.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/RegistrationService.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Commands/RegistrationCommandData.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Commands/RegistrationCommand.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Commands/Registration/RegistrationCommand.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Commands/Authorization/AuthorizationCommand.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Commands/Base/ExecuteCommand.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Commands/Registration/RegistrationHandlerData.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Commands/Registration/RegistrationHandler.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Commands/Authorization/AuthorizationCommandData.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Commands/Authorization/AuthorizationHandlerData.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/BaseServices/Services/AuthorizationService.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Services/BaseServices/Services/RegistrationService.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Commands/Authorization/AuthorizationHandler.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Commands/Base/CommandsFactory.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Handlers/Base/HandlerController.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Handlers/Base/IHandler.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Handlers/Base/HandlersModel.cs" />
+      <option value="$PROJECT_DIR$/ServerContext.cs" />
+      <option value="$PROJECT_DIR$/ServerCore/Handlers/Base/HandlersFactory.cs" />
       <option value="$PROJECT_DIR$/StartController.cs" />
+      <option value="$PROJECT_DIR$/Startup.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sArd0v7oztZ3cy6WNanqmhNW6U" />
@@ -206,6 +212,8 @@
       <workItem from="1620559450671" duration="10523000" />
       <workItem from="1620574852547" duration="6111000" />
       <workItem from="1620649354781" duration="8704000" />
+      <workItem from="1620673604057" duration="331000" />
+      <workItem from="1620674193406" duration="5627000" />
     </task>
     <servers />
   </component>

@@ -4743,19 +4743,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mephy\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mephy\\RiderProjects\\server\\Server\\Server.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\server\\Server\\Server.csproj",
       "projectName": "Server",
-      "projectPath": "C:\\Users\\mephy\\RiderProjects\\server\\Server\\Server.csproj",
-      "packagesPath": "C:\\Users\\mephy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mephy\\RiderProjects\\server\\Server\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\server\\Server\\Server.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\server\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mephy\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

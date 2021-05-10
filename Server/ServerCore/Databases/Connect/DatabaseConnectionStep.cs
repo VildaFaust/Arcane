@@ -1,6 +1,5 @@
 ﻿using Server.ServerCore.ServerLogger;
 using Server.ServerCore.Utilities;
-using ServerAspNetCoreLinux.ServerCore;
 
 namespace Server.ServerCore.Databases.Connect
 {
