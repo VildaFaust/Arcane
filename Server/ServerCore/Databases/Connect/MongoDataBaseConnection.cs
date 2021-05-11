@@ -18,7 +18,7 @@ namespace Server.ServerCore.Databases.Connect
             _settings = settings;
         }
 
-        public async void OpenConnect()
+        public void OpenConnect()
         {
             var connectionString = _settings.GetString("mongodb");
 
@@ -26,19 +26,11 @@ namespace Server.ServerCore.Databases.Connect
             {
                 Client = new MongoClient(connectionString);
                 IsConnected = true;
-
-                Database = Client.GetDatabase("server");
-                
-                
             }
             catch (Exception e)
             {
                 ServerLoggerModel.Log(TypeLog.Error, $"database connection error: {e.Message}");
             }
-        }
-
-        public void CloseConnect()
-        {
         }
     }
 }

@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using Server.ServerCore.User;
+﻿using Server.ServerCore.Users;
 
-namespace Server.ServerCore.Databases.Connect
+namespace Server.ServerCore.Databases
 {
     public class DatabaseCollectionData
     {

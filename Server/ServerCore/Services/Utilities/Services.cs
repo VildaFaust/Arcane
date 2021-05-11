@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Server.ServerCore.Services
+namespace Server.ServerCore.Services.Utilities
 {
     public class Services<TType> : IServices<TType> where TType : Enum
     {

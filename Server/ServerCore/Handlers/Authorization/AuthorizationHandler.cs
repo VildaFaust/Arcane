@@ -22,7 +22,7 @@ namespace Server.ServerCore.Handlers.Authorization
 
         public override void Execute(ServerContext context)
         {
-            context.BaseServices.Get<AuthorizationService>(BaseServices.AuthorizeService).AddRequest(_data);
+            context.BaseServices.Get<AuthorizationService>(BaseServices.AuthorizeService).AddRequest(_data, context);
         }
     }
 }

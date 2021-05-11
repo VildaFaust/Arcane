@@ -19,6 +19,11 @@
       }
     }
   },
+  "Worlds": {
+    "settings":{
+      "max_size": "100"
+    } 
+  },
   "Replication": {
     "enable": "",
     "label": ["", ""]

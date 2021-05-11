@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Server.ServerCore.Services
+namespace Server.ServerCore.Services.Utilities
 {
     public class ServiceConfiguration<TType> where TType : Enum
     {

@@ -3,6 +3,5 @@
     public interface IHandler
     {
         string NameCommand { get; }
-        
     }
 }

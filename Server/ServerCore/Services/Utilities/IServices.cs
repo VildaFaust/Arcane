@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Server.ServerCore.Services
+namespace Server.ServerCore.Services.Utilities
 {
     public interface IServices<in TType> where TType : Enum
     {

@@ -24,7 +24,7 @@ namespace Server.ServerCore.Handlers.Registration
 
         public override void Execute(ServerContext context)
         {
-            context.BaseServices.Get<RegistrationService>(BaseServices.RegistrationService).AddRequest(_data);
+            context.BaseServices.Get<RegistrationService>(BaseServices.RegistrationService).AddRequest(_data, context);
         }
     }
 }

@@ -2,7 +2,7 @@
 using MongoDB.Bson;
 using MongoDB.Driver;
 
-namespace Server.ServerCore.User
+namespace Server.ServerCore.Users
 {
     public class UserCollection
     {
@@ -35,6 +35,5 @@ namespace Server.ServerCore.User
             user.Id = ObjectId.GenerateNewId();
             _collection.InsertOne(user);
         }
-
     }
 }

@@ -2,7 +2,7 @@
 using MongoDB.Driver;
 using ObjectId = MongoDB.Bson.ObjectId;
 
-namespace Server.ServerCore.User
+namespace Server.ServerCore.Users
 {
     public class User
     {

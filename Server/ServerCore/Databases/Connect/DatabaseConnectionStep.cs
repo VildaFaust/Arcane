@@ -18,7 +18,7 @@ namespace Server.ServerCore.Databases.Connect
                     break;
             }
 
-            databaseConnection.OpenConnect();
+            databaseConnection?.OpenConnect();
 
             if (databaseConnection.IsConnected)
             {
@@ -34,7 +34,6 @@ namespace Server.ServerCore.Databases.Connect
 
         public void Clear(ServerContext context)
         {
-            context.DatabaseConnection.CloseConnect();
             context.DatabaseConnection = null;
         }
     }
