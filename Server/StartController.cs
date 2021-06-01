@@ -1,6 +1,6 @@
 ﻿using Server.ServerCore.Databases.Connect;
 using Server.ServerCore.Services.Utilities;
-using Server.ServerCore.Utilities;
+using Utilities;
 
 namespace Server
 {
@@ -8,7 +8,7 @@ namespace Server
     {
         private readonly ServerContext _context;
         private ControllerCollection _controllerCollection = new ControllerCollection();
-        private StepCollection _stepCollection = new StepCollection();
+        private StepCollection<ServerContext> _stepCollection = new StepCollection<ServerContext>();
 
         public StartController(ServerContext context)
         {

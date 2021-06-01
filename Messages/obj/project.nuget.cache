@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ARCN6JWCfpHWxtSmtFlh+Gebjz48qWDMBsPM+G6q3/CfbchBVOcgKUZYKhVBJJow34zcvAaxU65i9UopCqxpnA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\Desktop\\server\\Messages\\Messages.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}

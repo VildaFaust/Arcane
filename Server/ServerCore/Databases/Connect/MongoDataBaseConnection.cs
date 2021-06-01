@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MongoDB.Driver;
 using Server.ServerCore.ServerLogger;
-using Server.ServerCore.Utilities;
+using Utilities;
 
 namespace Server.ServerCore.Databases.Connect
 {

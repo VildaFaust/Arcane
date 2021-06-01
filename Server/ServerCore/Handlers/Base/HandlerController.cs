@@ -1,4 +1,4 @@
-﻿using Server.ServerCore.Utilities;
+﻿using Utilities;
 
 namespace Server.ServerCore.Handlers.Base
 {

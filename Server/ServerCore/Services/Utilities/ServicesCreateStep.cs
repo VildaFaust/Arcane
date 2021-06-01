@@ -1,10 +1,10 @@
 ﻿using Server.ServerCore.Services.BaseServices;
 using Server.ServerCore.Services.WorldServices;
-using Server.ServerCore.Utilities;
+using Utilities;
 
 namespace Server.ServerCore.Services.Utilities
 {
-    public class ServicesCreateStep : IStep
+    public class ServicesCreateStep : IStep<ServerContext>
     {
         public void Execute(ServerContext context, ControllerCollection controllerCollection)
         {

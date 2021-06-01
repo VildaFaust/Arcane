@@ -1377,6 +1377,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.ReaderWriter.dll": {}
         }
+      },
+      "Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilities.dll": {}
+        }
       }
     }
   },
@@ -4732,6 +4742,11 @@
         "system.xml.readerwriter.4.3.0.nupkg.sha512",
         "system.xml.readerwriter.nuspec"
       ]
+    },
+    "Utilities/1.0.0": {
+      "type": "project",
+      "path": "../Utilities/Utilities.csproj",
+      "msbuildProject": "../Utilities/Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4739,36 +4754,39 @@
       "LiteDB >= 5.0.10",
       "MongoDB.Driver >= 2.13.0-beta1",
       "Newtonsoft.Json >= 13.0.1",
-      "System.Data.SqlClient >= 4.3.0"
+      "System.Data.SqlClient >= 4.3.0",
+      "Utilities >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\faust\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ExperementsWork\\server\\Server\\Server.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\server\\Server\\Server.csproj",
       "projectName": "Server",
-      "projectPath": "C:\\ExperementsWork\\server\\Server\\Server.csproj",
-      "packagesPath": "C:\\Users\\faust\\.nuget\\packages\\",
-      "outputPath": "C:\\ExperementsWork\\server\\Server\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\server\\Server\\Server.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\server\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\faust\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\User\\Desktop\\server\\Utilities\\Utilities.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\server\\Utilities\\Utilities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -4808,12 +4826,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.5, 5.0.5]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4822,7 +4834,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.4.21255.9\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

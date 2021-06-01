@@ -1,9 +1,9 @@
 ﻿using Server.ServerCore.ServerLogger;
-using Server.ServerCore.Utilities;
+using Utilities;
 
 namespace Server.ServerCore.Databases.Connect
 {
-    public class DatabaseConnectionStep : IStep
+    public class DatabaseConnectionStep : IStep<ServerContext>
     {
         public void Execute(ServerContext context, ControllerCollection controllerCollection)
         {

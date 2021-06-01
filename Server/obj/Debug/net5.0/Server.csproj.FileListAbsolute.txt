@@ -158,3 +158,5 @@ C:\ExperementsWork\server\Server\obj\Debug\net5.0\scopedcss\bundle\Server.styles
 C:\ExperementsWork\server\Server\obj\Debug\net5.0\Server.RazorTargetAssemblyInfo.cache
 C:\ExperementsWork\server\Server\obj\Debug\net5.0\Server.csproj.CopyComplete
 C:\ExperementsWork\server\Server\obj\Debug\net5.0\Server.genruntimeconfig.cache
+C:\Users\User\Desktop\server\Server\bin\Debug\net5.0\Utilities.dll
+C:\Users\User\Desktop\server\Server\bin\Debug\net5.0\Utilities.pdb

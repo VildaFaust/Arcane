@@ -4,10 +4,11 @@ using Server.ServerCore.Handlers.Base;
 using Server.ServerCore.Services.BaseServices;
 using Server.ServerCore.Services.Utilities;
 using Server.ServerCore.Services.WorldServices;
+using Utilities;
 
 namespace Server
 {
-    public class ServerContext
+    public class ServerContext : IContext
     {
         public HandlersModel HandlersModel;
         
