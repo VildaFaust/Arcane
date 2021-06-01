@@ -1,0 +1,26 @@
+﻿{
+  "database": {
+    "type": "SQL",
+    "settings" : {
+      "host" : "remotemysql.com",
+      "port" : "3306",
+      "database" : "QYiBiMmFG5",
+      "username" : "QYiBiMmFG5",
+      "password" : "5Zktswrnvw",
+      "mongodb" : "mongodb://root:root@cluster0-shard-00-00.umhob.mongodb.net:27017,cluster0-shard-00-01.umhob.mongodb.net:27017,cluster0-shard-00-02.umhob.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-10b0h5-shard-0&authSource=admin&retryWrites=true&w=majority"
+    },
+    "tables": {
+      "users": {
+        "id": "int",
+        "uid": "string",
+        "login": "string",
+        "password": "string",
+        "email": "string"
+      }
+    }
+  },
+  "Replication": {
+    "enable": "",
+    "label": ["", ""]
+  }
+}
