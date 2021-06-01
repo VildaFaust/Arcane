@@ -12,7 +12,7 @@ namespace Server.ServerCore.Users
         public UserCollection(ServerContext context)
         {
             var database = context.DatabaseConnection.Database;
-            _collection = database.GetCollection<User>("users");
+//            _collection = database.GetCollection<User>("users");
         }
 
         private async void Load(ServerContext context)

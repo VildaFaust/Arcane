@@ -16,13 +16,19 @@ namespace Server.ServerCore.Handlers.Base
             Response = response;
             Response.OnStarting(() =>
             {
-                Response.Headers.Add("Host", "25.57.84.220:8000");
+#if DEBUG
+                Response.Headers.Add("Host", "http://localhost:3000");
+#endif
+#if DEVELOP
+                Response.Headers.Add("Host", "80.78.244.78");
+#endif
                 Response.Headers.Add("Access-Control-Allow-Origin", "25.57.84.220:8000");
                 Response.Headers.Add("Large-Allocation", "0");
                 Response.Headers.Add("Content-Range", "bytes */*");
                 Response.Headers.Add("Content-Encoding", "gzip");
                 Response.Headers.Add("Access-Control-Allow-Credentials", "true");
-                Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, Accept");
+                Response.Headers.Add("Access-Control-Allow-Headers",
+                    "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, Accept");
                 Response.Headers.Add("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
                 Response.Headers.Add("X-Requested-With", "XMLHttpRequest");
                 Response.Headers.Add("Accept", "*/*");
@@ -31,7 +37,8 @@ namespace Server.ServerCore.Handlers.Base
             });
 
             Response.StatusCode = 200;
-            ServerLoggerModel.Log(TypeLog.Info, $"{NameCommand}: {Response.HttpContext.Connection.RemoteIpAddress}:{Response.HttpContext.Connection.RemotePort}\r");
+            ServerLoggerModel.Log(TypeLog.Info,
+                $"{NameCommand}: {Response.HttpContext.Connection.RemoteIpAddress}:{Response.HttpContext.Connection.RemotePort}\r");
         }
 
         public abstract void Execute(ServerContext context);
