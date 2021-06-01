@@ -12,7 +12,7 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("DEVELOP")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+
 
 // Создано классом WriteCodeFragment MSBuild.
 
