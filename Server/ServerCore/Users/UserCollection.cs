@@ -15,7 +15,7 @@ namespace Server.ServerCore.Users
             // _collection = database.GetCollection<User>("users");
         }
 
-        private async void Load(ServerContext context)
+        private  void Load(ServerContext context)
         {
             // var listUsers = await _collection.Find(_ => true).ToListAsync();
 
