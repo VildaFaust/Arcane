@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\User\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
@@ -36,7 +36,7 @@
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive">
-        <e p="Debug" t="Include">
+        <e p="DEVELOP" t="Include">
           <e p="net5.0" t="Include">
             <e p="Server.AssemblyInfo.cs" t="Include" />
           </e>
