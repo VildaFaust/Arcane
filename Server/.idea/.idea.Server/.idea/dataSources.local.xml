@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="RD-211.7142.19">
+  <component name="dataSourceStorageLocal">
     <data-source name="MongoDB - myFirstDatabase@cluster0-shard-00-00.umhob.mongodb.net" uuid="737f62d6-b08b-410e-a5d1-e2c7140c24d2">
       <database-info product="Mongo DB" version="4.4.5" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.11" dbms="MONGO" exact-version="4.4.5" exact-driver-version="1.11" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />

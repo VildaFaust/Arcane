@@ -26,6 +26,6 @@ namespace Server
         public void Deactivate()
         {
             _stepCollection.Clear(_context);
-        }
+        }            
     }
 }

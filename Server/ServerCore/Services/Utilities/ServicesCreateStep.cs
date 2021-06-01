@@ -17,7 +17,7 @@ namespace Server.ServerCore.Services.Utilities
             context.BaseServices = baseServices;
             context.WorldServices = worldServices;
         }
-
+    
         public void Clear(ServerContext context)
         {
             context.BaseServices.Clear();

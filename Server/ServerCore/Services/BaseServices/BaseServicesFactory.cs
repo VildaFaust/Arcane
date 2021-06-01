@@ -11,10 +11,10 @@ namespace Server.ServerCore.Services.BaseServices
             {BaseServices.RegistrationService, new RegistrationService()},
             {BaseServices.AuthorizeService, new AuthorizationService()}
         };
-        
-        public IService Create(BaseServices type)
-        {
-            return _services[type];
-        }
-    }
-}
+         
+         public IService Create(BaseServices type)
+         {
+             return _services[type];
+         }
+     }
+ }
