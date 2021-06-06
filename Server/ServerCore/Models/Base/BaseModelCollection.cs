@@ -29,8 +29,9 @@ namespace Server.ServerCore.Models.Base
         
         public bool GetByKey<T>(string key, T value, out IList<TModel> resultData) where T : class
         {
-            bool exist = false;
             resultData = new List<TModel>();
+            var exist = false;
+            
             foreach (var model in _models.Values)
             {
                 var result = (T)model.GetByKey(key);

@@ -8,3 +8,9 @@ Client/Temp/
 Client/Client.sln
 
 Client/UserSettings/
+
+Messages/obj/
+
+Utilities/obj/
+
+Server/obj/

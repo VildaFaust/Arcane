@@ -41,7 +41,6 @@ namespace Server.ServerCore.Services.BaseServices.Services
 
         private static void AddError(AuthorizationHandlerData data)
         {
-
             data.UserParams.Add("err", "true");
             data.UserParams.Add("err_t", "Login or password is incorrect");
         }

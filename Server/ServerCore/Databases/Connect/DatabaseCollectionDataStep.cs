@@ -1,4 +1,5 @@
-﻿using Utilities;
+﻿using Server.ServerCore.Models;
+using Utilities;
 
 namespace Server.ServerCore.Databases.Connect
 {
@@ -6,7 +7,7 @@ namespace Server.ServerCore.Databases.Connect
     {
         public void Execute(ServerContext context, ControllerCollection controllerCollection)
         {
-            context.ModelsCollection = new DatabaseCollectionData(context);
+            context.ModelsCollection = new ModelsCollection();
         }
 
         public void Clear(ServerContext context)

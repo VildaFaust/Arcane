@@ -1,11 +1,9 @@
 ﻿using System;
-using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Server.ServerCore.Handlers.Registration;
 using Server.ServerCore.Models.User;
 using Server.ServerCore.ServerLogger;
 using Server.ServerCore.Services.Utilities;
-using Server.ServerCore.Users;
 
 namespace Server.ServerCore.Services.BaseServices.Services
 {
@@ -18,41 +16,44 @@ namespace Server.ServerCore.Services.BaseServices.Services
         public void AddRequest(RegistrationHandlerData data, ServerContext context)
         {
             var userCollection = context.ModelsCollection.Users;
-            var unique = true;
 
-            foreach (var user in userCollection.Users.Values)
+            if (userCollection.GetByKey(nameof(UserModel.Login), data.Login, out var resultData))
             {
-                if (user.Email.Equals(data.Email) || user.Login.Equals(data.Login))
-                    unique = false;
-            }
+                var user = resultData[0];
 
-            if (unique)
-            {
-                var user = new UserModel()
+                if (!user.Email.Equals(data.Email) || !user.Login.Equals(data.Login))
                 {
-                    Email = data.Email,
-                    Login = data.Login,
-                    Name = data.Name,
-                    Password = data.Password,
-                };
+                    var newUser = new UserModel()
+                    {
+                        Email = data.Email,
+                        Login = data.Login,
+                        Name = data.Name,
+                        Password = data.Password,
+                    };
                 
-                userCollection.AddNewUser(user);
-                data.UserParams.Add("id", user.Id.ToString());
-                data.UserParams.Add("err", "false");
+                    userCollection.Add(newUser);
                 
-                ServerLoggerModel.Log(TypeLog.UserMessage, $"User {user.Id} has been registered at {DateTime.Now}");
-            }
-            else
-            {
-                data.UserParams.Add("err", "true");
-                data.UserParams.Add("err_t", "Email or login exists");
+                    data.UserParams.Add("id", newUser.Guid.ToString());
+                    data.UserParams.Add("err", "false");
                 
-                ServerLoggerModel.Log(TypeLog.UserMessage, $"Registration error at {DateTime.Now}");
+                    ServerLoggerModel.Log(TypeLog.UserMessage, $"User {newUser.Guid} has been registered at {DateTime.Now}");
+                }
+                else
+                {
+                    AddError(data);
+                }
             }
             
             var sendObject = JsonConvert.SerializeObject(data.UserParams);
-            
             data.Send(sendObject);
+        }
+        
+        private static void AddError(RegistrationHandlerData data)
+        {
+            data.UserParams.Add("err", "true");
+            data.UserParams.Add("err_t", "Email or login exists");
+            
+            ServerLoggerModel.Log(TypeLog.UserMessage, $"Registration error at {DateTime.Now}");
         }
     }
 }
