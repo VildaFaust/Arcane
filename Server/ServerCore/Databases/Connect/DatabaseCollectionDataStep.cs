@@ -6,12 +6,12 @@ namespace Server.ServerCore.Databases.Connect
     {
         public void Execute(ServerContext context, ControllerCollection controllerCollection)
         {
-            context.Data = new DatabaseCollectionData(context);
+            context.ModelsCollection = new DatabaseCollectionData(context);
         }
 
         public void Clear(ServerContext context)
         {
-            context.Data = null;
+            context.ModelsCollection = null;
         }
     }
 }

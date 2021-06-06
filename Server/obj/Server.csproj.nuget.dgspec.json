@@ -1,32 +1,92 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\server\\Server\\Server.csproj": {}
+    "C:\\ExperementsWork\\server\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\server\\Server\\Server.csproj": {
+    "C:\\ExperementsWork\\server\\Messages\\Messages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\server\\Server\\Server.csproj",
-        "projectName": "Server",
-        "projectPath": "C:\\Users\\User\\Desktop\\server\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\server\\Server\\obj\\",
+        "projectUniqueName": "C:\\ExperementsWork\\server\\Messages\\Messages.csproj",
+        "projectName": "Messages",
+        "projectPath": "C:\\ExperementsWork\\server\\Messages\\Messages.csproj",
+        "packagesPath": "C:\\Users\\faust\\.nuget\\packages\\",
+        "outputPath": "C:\\ExperementsWork\\server\\Messages\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\faust\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net50"
+          "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp5.0": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.4.21255.9\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ExperementsWork\\server\\Server\\Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ExperementsWork\\server\\Server\\Server.csproj",
+        "projectName": "Server",
+        "projectPath": "C:\\ExperementsWork\\server\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\faust\\.nuget\\packages\\",
+        "outputPath": "C:\\ExperementsWork\\server\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\faust\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\server\\Utilities\\Utilities.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\server\\Utilities\\Utilities.csproj"
+              "C:\\ExperementsWork\\server\\Messages\\Messages.csproj": {
+                "projectPath": "C:\\ExperementsWork\\server\\Messages\\Messages.csproj"
+              },
+              "C:\\ExperementsWork\\server\\Utilities\\Utilities.csproj": {
+                "projectPath": "C:\\ExperementsWork\\server\\Utilities\\Utilities.csproj"
               }
             }
           }
@@ -38,7 +98,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp5.0": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "LiteDB": {
               "target": "Package",
@@ -66,30 +127,48 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.5, 5.0.5]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.4.21255.9\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\server\\Utilities\\Utilities.csproj": {
+    "C:\\ExperementsWork\\server\\Utilities\\Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\server\\Utilities\\Utilities.csproj",
+        "projectUniqueName": "C:\\ExperementsWork\\server\\Utilities\\Utilities.csproj",
         "projectName": "Utilities",
-        "projectPath": "C:\\Users\\User\\Desktop\\server\\Utilities\\Utilities.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\server\\Utilities\\obj\\",
+        "projectPath": "C:\\ExperementsWork\\server\\Utilities\\Utilities.csproj",
+        "packagesPath": "C:\\Users\\faust\\.nuget\\packages\\",
+        "outputPath": "C:\\ExperementsWork\\server\\Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\faust\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -101,6 +180,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -110,7 +190,13 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.4.21255.9\\RuntimeIdentifierGraph.json"
         }
       }
     }

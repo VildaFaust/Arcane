@@ -1,6 +1,7 @@
 ﻿using Server.ServerCore.Databases;
 using Server.ServerCore.Databases.Connect;
 using Server.ServerCore.Handlers.Base;
+using Server.ServerCore.Models;
 using Server.ServerCore.Services.BaseServices;
 using Server.ServerCore.Services.Utilities;
 using Server.ServerCore.Services.WorldServices;
@@ -13,7 +14,7 @@ namespace Server
         public HandlersModel HandlersModel;
         
         public IDatabaseConnection DatabaseConnection;
-        public DatabaseCollectionData Data;
+        public IModelsCollection ModelsCollection = new ModelsCollection();
 
         public IServices<BaseServices> BaseServices;
         public IServices<WorldServices> WorldServices;

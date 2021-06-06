@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "udjw/v4hVfk4I8e3pruyEJqn0juqz1gLGNkds4hjlvWLmbIg2E/vU1LOxh9q1wNp4ud+0AhqoBnktedcjgzxFQ==",
+  "dgSpecHash": "wgVxNl1NMTU6JRqY9BcZUR7iP/UYP4IkHdRlzyy4N6YgLg7sOPFtcCWVYwGwkPSzglDvMAXbeBpwh++ADNDGAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\server\\Utilities\\Utilities.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\ExperementsWork\\server\\Utilities\\Utilities.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

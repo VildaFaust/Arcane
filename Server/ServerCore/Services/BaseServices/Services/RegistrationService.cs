@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Server.ServerCore.Handlers.Registration;
+using Server.ServerCore.Models.User;
 using Server.ServerCore.ServerLogger;
 using Server.ServerCore.Services.Utilities;
 using Server.ServerCore.Users;
@@ -16,7 +17,7 @@ namespace Server.ServerCore.Services.BaseServices.Services
 
         public void AddRequest(RegistrationHandlerData data, ServerContext context)
         {
-            var userCollection = context.Data.UserCollection;
+            var userCollection = context.ModelsCollection.Users;
             var unique = true;
 
             foreach (var user in userCollection.Users.Values)
@@ -27,7 +28,7 @@ namespace Server.ServerCore.Services.BaseServices.Services
 
             if (unique)
             {
-                var user = new User()
+                var user = new UserModel()
                 {
                     Email = data.Email,
                     Login = data.Login,

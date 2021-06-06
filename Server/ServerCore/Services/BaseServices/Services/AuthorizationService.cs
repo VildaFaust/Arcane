@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Server.ServerCore.Handlers.Authorization;
 using Server.ServerCore.Handlers.Base;
+using Server.ServerCore.Models.User;
 using Server.ServerCore.Services.Utilities;
 
 namespace Server.ServerCore.Services.BaseServices.Services
@@ -13,29 +14,36 @@ namespace Server.ServerCore.Services.BaseServices.Services
 
         public void AddRequest(AuthorizationHandlerData data, ServerContext context)
         {
-            var userCollection = context.Data.UserCollection;
+            var userCollection = context.ModelsCollection.Users;
 
-            foreach (var user in userCollection.Users.Values)
+            if (userCollection.GetByKey(nameof(UserModel.Login), data.Login, out var resultData))
             {
-                var uniqueLogin = user.Login.Equals(data.Login);
-                var uniquePassword = user.Password.Equals(data.Password);
+                var user = resultData[0];
 
-                if (uniqueLogin && uniquePassword)
+                if (user.Password == data.Password)
                 {
-                    data.UserParams.Add("id", user.Id.ToString());
+                    data.UserParams.Add("id", user.Guid.ToString());
                     data.UserParams.Add("err", "false");
                 }
-
-                if (!uniqueLogin || !uniquePassword)
+                else
                 {
-                    data.UserParams.Add("err", "true");
-                    data.UserParams.Add("err_t", "Login or password is incorrect");
+                    AddError(data);
                 }
+            }
+            else
+            {
+                AddError(data);
             }
 
             var sendObject = JsonConvert.SerializeObject(data.UserParams);
-
             data.Send(sendObject);
+        }
+
+        private static void AddError(AuthorizationHandlerData data)
+        {
+
+            data.UserParams.Add("err", "true");
+            data.UserParams.Add("err_t", "Login or password is incorrect");
         }
     }
 }

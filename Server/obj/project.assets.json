@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v5.0": {
+    "net5.0": {
       "DnsClient/1.4.0": {
         "type": "package",
         "compile": {
@@ -1376,6 +1376,16 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.ReaderWriter.dll": {}
+        }
+      },
+      "Messages/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Messages.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Messages.dll": {}
         }
       },
       "Utilities/1.0.0": {
@@ -4743,6 +4753,11 @@
         "system.xml.readerwriter.nuspec"
       ]
     },
+    "Messages/1.0.0": {
+      "type": "project",
+      "path": "../Messages/Messages.csproj",
+      "msbuildProject": "../Messages/Messages.csproj"
+    },
     "Utilities/1.0.0": {
       "type": "project",
       "path": "../Utilities/Utilities.csproj",
@@ -4750,8 +4765,9 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v5.0": [
+    "net5.0": [
       "LiteDB >= 5.0.10",
+      "Messages >= 1.0.0",
       "MongoDB.Driver >= 2.13.0-beta1",
       "Newtonsoft.Json >= 13.0.1",
       "System.Data.SqlClient >= 4.3.0",
@@ -4759,31 +4775,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\faust\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\server\\Server\\Server.csproj",
+      "projectUniqueName": "C:\\ExperementsWork\\server\\Server\\Server.csproj",
       "projectName": "Server",
-      "projectPath": "C:\\Users\\User\\Desktop\\server\\Server\\Server.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\server\\Server\\obj\\",
+      "projectPath": "C:\\ExperementsWork\\server\\Server\\Server.csproj",
+      "packagesPath": "C:\\Users\\faust\\.nuget\\packages\\",
+      "outputPath": "C:\\ExperementsWork\\server\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\faust\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net50"
+        "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp5.0": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\server\\Utilities\\Utilities.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\server\\Utilities\\Utilities.csproj"
+            "C:\\ExperementsWork\\server\\Messages\\Messages.csproj": {
+              "projectPath": "C:\\ExperementsWork\\server\\Messages\\Messages.csproj"
+            },
+            "C:\\ExperementsWork\\server\\Utilities\\Utilities.csproj": {
+              "projectPath": "C:\\ExperementsWork\\server\\Utilities\\Utilities.csproj"
             }
           }
         }
@@ -4795,7 +4817,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp5.0": {
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "LiteDB": {
             "target": "Package",
@@ -4823,7 +4846,22 @@
           "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.5, 5.0.5]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.4.21255.9\\RuntimeIdentifierGraph.json"
       }
     }
   }
