@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Server.ServerCore.Handlers.Authorization;
 using Server.ServerCore.Handlers.Base;
 using Server.ServerCore.Handlers.Registration;
+using Server.ServerCore.Handlers.UpdatePermission;
 
 namespace Server.ServerCore.Handlers
 {
@@ -17,6 +18,7 @@ namespace Server.ServerCore.Handlers
             {
                 {nameof(RegistrationHandler), (form, response, request) => new RegistrationHandler(form, response, request)},
                 {nameof(AuthorizationHandler), (form, response, request) => new AuthorizationHandler(form, response, request)},
+                {nameof(UpdatePermissionHandler), (form, response, request) => new UpdatePermissionHandler(form, response, request)},
             };
         }
     }

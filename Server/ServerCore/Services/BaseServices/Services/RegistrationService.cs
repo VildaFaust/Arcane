@@ -29,6 +29,7 @@ namespace Server.ServerCore.Services.BaseServices.Services
                         Login = data.Login,
                         Name = data.Name,
                         Password = data.Password,
+                        Type = UserType.Guest.ToString()
                     };
                 
                     userCollection.Add(newUser);
@@ -53,7 +54,7 @@ namespace Server.ServerCore.Services.BaseServices.Services
             data.UserParams.Add("err", "true");
             data.UserParams.Add("err_t", "Email or login exists");
             
-            ServerLoggerModel.Log(TypeLog.UserMessage, $"Registration error at {DateTime.Now}");
+            ServerLoggerModel.Log(TypeLog.Error, $"Registration error at {DateTime.Now}");
         }
     }
 }

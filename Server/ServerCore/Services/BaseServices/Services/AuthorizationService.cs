@@ -1,7 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 using Server.ServerCore.Handlers.Authorization;
 using Server.ServerCore.Handlers.Base;
 using Server.ServerCore.Models.User;
+using Server.ServerCore.ServerLogger;
 using Server.ServerCore.Services.Utilities;
 
 namespace Server.ServerCore.Services.BaseServices.Services
@@ -43,6 +45,8 @@ namespace Server.ServerCore.Services.BaseServices.Services
         {
             data.UserParams.Add("err", "true");
             data.UserParams.Add("err_t", "Login or password is incorrect");
+
+            ServerLoggerModel.Log(TypeLog.Error, $"Registration error at {DateTime.Now}");
         }
     }
 }
