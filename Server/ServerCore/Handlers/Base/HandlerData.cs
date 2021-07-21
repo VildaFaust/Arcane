@@ -5,20 +5,20 @@ namespace Server.ServerCore.Handlers.Base
 {
     public class HandlerData
     {
-        public Dictionary<string, string> UserParams = new Dictionary<string, string>();
-        public HttpResponse Response { get; }
+        public readonly Dictionary<string, string> UserParams = new Dictionary<string, string>();
+        private readonly HttpResponse _response;
 
-        public HandlerData(HttpResponse response)
+        protected HandlerData(HttpResponse response)
         {
-            Response = response;
+            _response = response;
         }
 
         public async void Send(string sendObject)
         {
-            Response.StatusCode = 200;
+            _response.StatusCode = 200;
             
-            await Response.WriteAsync(sendObject);
-            await Response.CompleteAsync();
+            await _response.WriteAsync(sendObject);
+            await _response.CompleteAsync();
         }
     }
 }

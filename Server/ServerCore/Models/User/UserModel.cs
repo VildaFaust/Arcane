@@ -14,6 +14,7 @@ namespace Server.ServerCore.Models.User
         public string Login { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
+        public string Type { get; set; }
 
         public void Update(IMongoCollection<UserModel> collection)
         {
@@ -22,7 +23,8 @@ namespace Server.ServerCore.Models.User
                 .Set(nameof(Name), Name)
                 .Set(nameof(Login), Login)
                 .Set(nameof(Password), Password)
-                .Set(nameof(Email), Email);
+                .Set(nameof(Email), Email)
+                .Set(nameof(Type), Type);
 
             collection.UpdateOne(filter, update);
         }
@@ -39,6 +41,8 @@ namespace Server.ServerCore.Models.User
                     return Password;
                 case nameof(Email):
                     return Email;
+                case nameof(Type):
+                    return Enum.Parse<UserType>(Type, true);
             }
 
             return null;

@@ -3,6 +3,7 @@
     public enum BaseServices
     {
         AuthorizeService,
-        RegistrationService
+        RegistrationService,
+        UpdatePermission
     }
 }
