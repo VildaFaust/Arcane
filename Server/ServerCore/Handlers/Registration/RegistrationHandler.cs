@@ -12,13 +12,13 @@ namespace Server.ServerCore.Handlers.Registration
         public RegistrationHandler(IFormCollection data, HttpResponse response, HttpRequest request) : base(data, response, request)
         {
             NameCommand = nameof(RegistrationHandler);
-            _data = new RegistrationHandlerData()
+            
+            _data = new RegistrationHandlerData(response)
             {
                 Email = data["e"],
                 Login = data["l"],
                 Name = data["n"],
                 Password = data["p"],
-                Response = response
             };
         }
 

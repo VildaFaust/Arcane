@@ -3,7 +3,6 @@ using Server.ServerCore.Handlers.Base;
 using Server.ServerCore.Models;
 using Server.ServerCore.Services.BaseServices;
 using Server.ServerCore.Services.Utilities;
-using Server.ServerCore.Services.WorldServices;
 using Utilities;
 
 namespace Server
@@ -16,6 +15,5 @@ namespace Server
         public IModelsCollection ModelsCollection;
 
         public IServices<BaseServices> BaseServices;
-        public IServices<WorldServices> WorldServices;
     }
 }

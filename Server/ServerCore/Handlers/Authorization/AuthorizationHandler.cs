@@ -12,11 +12,11 @@ namespace Server.ServerCore.Handlers.Authorization
         public AuthorizationHandler(IFormCollection data, HttpResponse response, HttpRequest request) : base(data, response, request)
         {
             NameCommand = nameof(AuthorizationHandler);
-            _data = new AuthorizationHandlerData()
+            
+            _data = new AuthorizationHandlerData(response)
             {
                 Login = data["l"],
                 Password = data["p"],
-                Response = response
             };
         }
 
