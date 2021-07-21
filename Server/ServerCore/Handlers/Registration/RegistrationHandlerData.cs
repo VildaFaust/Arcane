@@ -1,4 +1,5 @@
-﻿using Server.ServerCore.Handlers.Base;
+﻿using Microsoft.AspNetCore.Http;
+using Server.ServerCore.Handlers.Base;
 
 namespace Server.ServerCore.Handlers.Registration
 {
@@ -8,5 +9,9 @@ namespace Server.ServerCore.Handlers.Registration
         public string Login { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+
+        public RegistrationHandlerData(HttpResponse response) : base(response)
+        {
+        }
     }
 }
