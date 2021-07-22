@@ -16,3 +16,11 @@ Utilities/obj/
 Server/obj/
 
 Shell/node_modules/
+
+UnityShell/Library/
+
+UnityShell/Logs/
+
+UnityShell/UserSettings/
+
+UnityShell/Temp/
