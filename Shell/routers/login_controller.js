@@ -1,5 +1,6 @@
 const http = require("http");
 const querystring = require("querystring");
+const Cookies = require("cookies");
 
 const post = (req, res, next) => {
     var data = querystring.stringify({
@@ -7,7 +8,8 @@ const post = (req, res, next) => {
     });
 
     var options = {
-        host: '192.168.0.107',
+        // host: '192.168.0.107',
+        host: '127.0.0.1',
         port: 3001,
         path: '/request',
         method: 'POST',
@@ -17,7 +19,7 @@ const post = (req, res, next) => {
         }
     };
 
-    var request1 = http.request(options, function(res)
+    var request = http.request(options, function(res)
     {
         res.setEncoding('utf8');
         res.on('data', function (chunk) {
@@ -25,12 +27,20 @@ const post = (req, res, next) => {
         });
     });
 
-    request1.write(data);
-    request1.end();
+    request.write(data);
+    request.end();
 }
 
 const get = (req, res, next) => {
-    res.render("login");
+    var cookies = new Cookies(req, res);
+
+    if (cookies.get('Login')){
+        res.render("index");
+    }
+    else
+    {
+        res.render("login");
+    }
 }
 
 module.exports = {post, get};

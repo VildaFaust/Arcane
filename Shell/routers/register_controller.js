@@ -11,7 +11,8 @@ const post = (req, res, next) => {
     });
 
     var options = {
-        host: '192.168.0.107',
+        // host: '192.168.0.107',
+        host: '127.0.0.1',
         port: 3001,
         path: '/request',
         method: 'POST',

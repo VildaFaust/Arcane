@@ -11,24 +11,16 @@
             <div class="info-item">
                 <div class="table">
                     <div class="table-cell">
-                        <p>
-                            Уже есть аккаунт?
-                        </p>
-                        <div class="btn">
-                            Войти
-                        </div>
+                        <p>Уже есть аккаунт?</p>
+                        <div class="btn">Войти</div>
                     </div>
                 </div>
             </div>
             <div class="info-item">
                 <div class="table">
                     <div class="table-cell">
-                        <p>
-                            Нет аккаунта?
-                        </p>
-                        <div class="btn">
-                            Зарегистрироваться
-                        </div>
+                        <p>Нет аккаунта?</p>
+                        <div class="btn">Зарегистрироваться</div>
                     </div>
                 </div>
             </div>
@@ -49,11 +41,11 @@
                 <div class="table">
                     <div class="table-cell">
                         <form action="/register" method="post">
-                            <input name="email" placeholder="Email" type="text">
-                            <input name="fullName" placeholder="Full Name" type="text">
-                            <input name="login" placeholder="Login" type="text">
-                            <input name="password" placeholder="Password" type="Password">
-                            <input type="submit" value="Зарегистрироваться" class="btn">
+                            <input id="email" name="email" placeholder="Email" type="text">
+                            <input id="fullName" name="fullName" placeholder="Full Name" type="text">
+                            <input id="login" name="login" placeholder="Login" type="text">
+                            <input id="password" name="password" placeholder="Password" type="Password">
+                            <input id="registerBtn" type="submit" value="Зарегистрироваться" class="btn">
                         </form>
                     </div>
                 </div>
@@ -62,11 +54,20 @@
     </div>
 </div>
 
-
 <!-- JavaScript includes -->
 
 <script src="//code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="/js/script.js"></script>
+
+<script>
+    document.getElementById('registerBtn').onclick = function () {
+        var login = document.getElementById('login').value;
+        var password = document.getElementById('password').value;
+
+        document.cookie = `Login=${login}`;
+        document.cookie = `Password=${password}`;
+    }
+</script>
 </body>
 </html>
 

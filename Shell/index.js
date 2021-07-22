@@ -1,8 +1,8 @@
 // const hostname = '192.168.0.107';
-const hostname = '192.168.0.108';
+// const hostname = '192.168.0.108';
+const hostname = '127.0.0.1';
 const express = require("express");
-const bodyParser = require('body-parser')
-
+const bodyParser = require('body-parser');
 const app = express();
 const router = express.Router();
 
